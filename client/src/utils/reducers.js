@@ -88,3 +88,15 @@ import {
 // export function useProductReducer(initialState) {
 //   return useReducer(reducer, initialState)
 // }
+
+import React from 'react'
+
+function reducers() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default reducers
