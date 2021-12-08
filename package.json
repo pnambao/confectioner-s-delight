@@ -2,7 +2,7 @@
   "name": "mern-shopping",
   "version": "1.0.0",
   "engines": {
-    "node": "v14.17.4"
+    "npm": "7.x"
   },
   "description": "",
   "main": "server/server.js",
