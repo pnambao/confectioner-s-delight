@@ -89,14 +89,16 @@ import {
 //   return useReducer(reducer, initialState)
 // }
 
-import React from 'react'
+//Setting the initial state
 
-function reducers() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const initState = {
+  products: [],
+  cart: [],
+  cartOpen: false,
+  categories: [],
+  currentCategory: "",
+};
 
-export default reducers
+//Creating the reducer function, so that when actions are applied to the initial state, we can get back a new state
+
+const reducer
