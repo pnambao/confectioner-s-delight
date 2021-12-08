@@ -101,4 +101,34 @@ const initState = {
 
 //Creating the reducer function, so that when actions are applied to the initial state, we can get back a new state
 
-const reducer
+const reducer = (state = initState, action) => {
+
+  //for each action we have
+  switch (action.type) {
+
+    //In each case, we apply an action to the products array. Each action changes the state of the products array and returns the new state of the array.
+
+    case UPDATE_PRODUCTS:
+      return {
+        ...state,
+        products: [...action.products],
+      };
+
+      //cart has to be open to add products to it. Add to cart action adds a product to the products array, changing its initial state to the new state.
+      case ADD_TO_CART:
+        return {
+          ...state,
+          cartOpen: true,
+          cart: [...state.cart, action.product],
+        };
+
+
+
+
+
+
+}
+
+
+
+}
