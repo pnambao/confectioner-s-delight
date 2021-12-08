@@ -157,7 +157,7 @@ const reducer = (state = initState, action) => {
                 ...state,
                 cartOpen: false,
                 cart: [],
-              }:
+              };
 
               case TOGGLE_CART:
                 return {
